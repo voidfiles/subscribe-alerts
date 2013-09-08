@@ -1,4 +1,5 @@
 app/components
+src/app/components
 dist/
 broadcast-subscribe.pem
 node_modules/

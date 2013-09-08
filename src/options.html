@@ -1,0 +1,17 @@
+<!Doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>A way to subscribe to app.net notifications</title>
+  <script data-main="/app/options" src="/app/components/requirejs/require.js"></script>
+  <script src="/app/config.js"></script>
+</head>
+<body>
+    <h1>Authorize the PourOver extensions</h1>
+    <a href='https://account.app.net/oauth/authenticate?client_id=6kmFxf2JrEqmFRQ4WncLfN8WWx7FnUS8&response_type=token&scope=write_post+messages+public_messages&redirect_uri=chrome-extension://cfeahloocnncpelfiekbodlmlojfoapi/options.html' target='_blank' data-authorize>Authorize</a>
+    <p style='display: none;'>
+        You are authorized, you should start seeing push notifications shortly.<br/>
+        <a href='#' data-manual-push>Click here to manually send a notficiation.</a>
+    </p>
+</body>
+</html>
