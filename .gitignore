@@ -1,0 +1,7 @@
+app/components
+dist/
+broadcast-subscribe.pem
+node_modules/
+*.zip
+tmp
+.DS_Store
