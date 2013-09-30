@@ -2,6 +2,7 @@
   "name": "broadcast-subscribe",
   "dependencies": {
     "requirejs": "~2.1.5",
-    "jquery": ">= 1.8.0"
+    "jquery": ">= 1.8.0",
+    "purl": "~2.3.1"
   }
 }

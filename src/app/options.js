@@ -1,6 +1,6 @@
 define(["jquery", "purl"], function($, purl) {
     console.log(window.location.href);
-    var accessToken = purl(window.location.href).fparam('access_token');
+    var accessToken = purl(window.location.href).fparam('access_token') || localStorage.accessToken;
     if (accessToken) {
         chrome.pushMessaging.getChannelId(true, function (userChannelObj) {
           console.log('settings channelId', userChannelObj.channelId);
@@ -17,8 +17,6 @@ define(["jquery", "purl"], function($, purl) {
           });
         });
 
-    } else {
-      accessToken = localStorage.accessToken;
     }
 
     if (accessToken) {
